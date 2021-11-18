@@ -45,7 +45,7 @@ ul{
 }
 .list_nav_header a{
   color: #fff;
-  font: 500 15px/1em 'noto sans japanese',sans-serif;
+  font: 15px sans-serif;
 }
 .list_nav_header .btn_contact{ /*お問い合わせ ボタン*/
   color: fff;
