@@ -1,3 +1,7 @@
+/*フォント*/
+body{
+  font-family: sans-serif;
+}
 /*ヘッダー*/
 header{
   color: #fff;
