@@ -1,0 +1,46 @@
+body{
+  background: #222;
+}
+.vivid_hero_icon{
+  background: #69c;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  float: right;
+  width: 50%;
+  height: 100%
+}
+.vivid_hero_image{
+  background: #69c;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  float: left;
+  width: 50%;
+  height: 100%
+}
+/*英雄のアイコン*/
+.hero_icon{
+  height: 120px;
+  width: 103.5px;
+  padding: 0px  0px 24px 0px;
+  margin: 0px 5px 5px 5px;
+  background-image: url(heros/テキストボックス.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.hero_icon img{
+  vertical-align: top;
+  width: 103.5px;
+  height: 120px;
+}
+.hero_icon p{
+  text-align: center;
+  padding: 3px 0px;
+  font-size: 12px;
+  margin: 0px;
+  color: #fff;
+}
+.hero_icon a{
+  text-decoration: none;
+}
