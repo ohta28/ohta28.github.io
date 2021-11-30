@@ -21,7 +21,7 @@ img{
   flex-wrap: wrap;
   float: left;
   width: 520px;/*max-width ÷ 2*/
-  height: 20%;
+  height: calc(20% - 10px);
   t@op: 0px;/*上寄せの必要はない*/
 }
 /*画面左下側の要素*/
@@ -33,7 +33,7 @@ img{
   float: left;
   w@idth: calc(55% - 50px); /*50%ー余白のピクセル数*/
   width: 520px;/*max-width ÷ 2*/
-  height: 80%;
+  height: calc(80% - 40px);
   bottom: 0px;/*下寄せ*/
 }
 .hero_image{
