@@ -38,7 +38,7 @@ img{
 .hero_image{
   width: 312px;
   height: 100%;
-  background: #ddd;/*おそらく白*/
+  background: #888;/*灰色*/
   /*position: relative;
   padding: 0px 5px 0px 5px;*/
   }
@@ -60,7 +60,7 @@ img{
 }
 /*画面右側の要素*/
 .vivid_hero_icon{
-  background: #bbb;
+  background: #ccc;
   flex-direction: row;
   flex-wrap: wrap;
   float: right;
@@ -81,8 +81,9 @@ img{
 }
 /*英雄のアイコン*/
 .hero_icon{
+  border-radius: 9.5px;
   margin: 5px 5px 5px 5px;
-  background-color: #555;
+  background-color: #50586C;
 }
 .hero_icon img{
   border-radius: 9.5px;
