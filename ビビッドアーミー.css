@@ -73,10 +73,10 @@ img{
   display: grid;
   grid-template-columns: repeat(5,1fr)
 }
-@media(max-width:550px){
+@media(max-width:80px){
   .vivid_hero_icon{
     display: grid;
-    grid-template-columns: repeat(4,1fr)
+    grid-template-columns: repeat(10,1fr)
   }
 }
 /*英雄のアイコン*/
@@ -85,7 +85,7 @@ img{
   background-color: #555;
 }
 .hero_icon img{
-  display: block;
+  border-radius: 9px;
   width: 100%;
 }
 .hero_icon p{
