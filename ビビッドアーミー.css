@@ -21,8 +21,8 @@ img{
   flex-wrap: wrap;
   float: left;
   width: 520px;/*max-width ÷ 2*/
-  height: calc(15vh - 7.5px);
-  t@op: 0px;/*上寄せの必要はない*/
+  height: calc(15% - 7.5px);
+  top: 50px;/*上寄せの必要はない*/
 }
 /*画面左下側の要素*/
 .vivid_hero_image{
@@ -31,9 +31,8 @@ img{
   flex-direction: row;
   flex-wrap: wrap;
   float: left;
-  w@idth: calc(55% - 50px); /*50%ー余白のピクセル数*/
   width: 520px;/*max-width ÷ 2*/
-  height: calc(85vh - 42.5px);
+  height: calc(85% - 42.5px);
   bottom: 0px;/*下寄せ*/
 }
 .hero_image{
