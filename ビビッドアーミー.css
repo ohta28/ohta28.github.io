@@ -8,8 +8,17 @@ img{
   vertical-align: top;/*アイコン下の余白を消す*/
 }
 /*スクロールバー*/
-.section {
-  scrollbar-width: thin;
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+  b@ackground: #bbb;
+  background: linear-gradient(grey,black,grey);
+}
+::-webkit-scrollbar-thumb {
+  b@ackground: #888;
+  background: linear-gradient(pink,skyblue);
+  border-radius: 5px;
 }
 /*メインの余白*/
 .main{
@@ -64,15 +73,17 @@ img{
   width: 208px;
   height: 100%;
   float: right;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 /*画面右側の要素*/
 .vivid_hero_icon{
   background: #ccc;
-  flex-direction: row;
-  flex-wrap: wrap;
+  f@lex-direction: row;
+  f@lex-wrap: wrap;
   float: right;
   width: 500px;
+  w@idth: calc(100% - 540px);
   height: 100%;
   padding: 2% 10px 2% 10px;
 }
@@ -81,16 +92,23 @@ img{
   display: grid;
   grid-template-columns: repeat(5,1fr)
 }
-@media(max-width:80px){
+@media(max-width:1180px){
   .vivid_hero_icon{
     display: grid;
-    grid-template-columns: repeat(10,1fr)
+    grid-template-columns: repeat(5,1fr)
+  }
+}
+@media(max-width:1085px){
+  .vivid_hero_icon{
+    display: grid;
+    grid-template-columns: repeat(4,1fr)
   }
 }
 /*英雄のアイコン*/
 .hero_icon{
+  box-shadow: 0 0 4px gray;/*影*/
   border-radius: 9.5px;
-  margin: 4px 4px 4px 4px;
+  margin: 5px 5px 5px 5px;
   background-color: #50586C;
 }
 .hero_icon img{
