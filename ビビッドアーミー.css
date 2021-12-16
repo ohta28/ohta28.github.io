@@ -20,34 +20,34 @@ img{
   background: linear-gradient(pink,skyblue);
   border-radius: 5px;
 }
-/*メインの余白*/
+/*メイン*/
 .main{
   padding: 0px 20px 0px 20px;
-  max-width: 1040px;/*1180-20-20*//*-------------------*/
+  max-width: 1140px;/*1180-20-20*//*-------------------*/
   margin: auto;
 }
-/*画面左上側の要素*/
+/*画面上側の要素*/
 .vivid_hero_opinion{
   position: fixed;
   background: #fff;
   flex-direction: row;
   flex-wrap: wrap;
   float: left;
-  width: 520px;/*max-width ÷ 2*/
+  width: 627px;
   h@eight: calc(15% - 7.5px);
   height: 100px;
   top: 50px;/*上寄せの必要はない*/
 }
-/*画面左下側の要素*/
+/*左下側の要素*/
 .vivid_hero_image{
   position: fixed;
   b@ackground: #0aa;
-  width: 520px;/*max-width ÷ 2*/
+  width: 627px;
   height: calc(100% - 150px);
   bottom: 0px;/*下寄せ*/
 }
 .hero_image{
-  width: 312px;
+  width: 313.5px;
   height: 100%;
   background: #888;/*灰色*/
   float: left;
@@ -62,15 +62,16 @@ img{
   width: 302px;*/
   p@adding-left: 5px;
   p@adding-right: 5px;
-  padding-top: calc(((100vh - 150px) - 472.328px) / 2);
-  padding-bottom: calc(((100vh - 150px) - 472.328px) / 2);
+  padding-top: calc(((100vh - 150px) - 474.594px) / 2);
+  padding-bottom: calc(((100vh - 150px) - 474.594px) / 2);
 }
 .image img{
   width: 100%;
 }
+/*右下の要素*/
 .hero_text{
   background: #9c6;
-  width: 208px;
+  width: 313.5px;
   height: 100%;
   float: right;
   overflow-x: hidden;
@@ -82,8 +83,8 @@ img{
   f@lex-direction: row;
   f@lex-wrap: wrap;
   float: right;
-  width: 500px;
-  w@idth: calc(100% - 540px);
+  w@idth: 500px;
+  width: calc(100% - 647px);
   height: 100%;
   padding: 2% 10px 2% 10px;
 }
@@ -92,13 +93,13 @@ img{
   display: grid;
   grid-template-columns: repeat(5,1fr)
 }
-@media(max-width:1180px){
+@media(max-width:1180px){/*～を下回った時*/
   .vivid_hero_icon{
     display: grid;
     grid-template-columns: repeat(5,1fr)
   }
 }
-@media(max-width:1085px){
+@media(max-width:1080px){
   .vivid_hero_icon{
     display: grid;
     grid-template-columns: repeat(4,1fr)
