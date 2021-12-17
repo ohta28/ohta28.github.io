@@ -122,6 +122,11 @@ img{
   padding-left: 26px;
   margin: 0px;
 }
+.border{
+  border-bottom: 2px solid;/*ボーダー*/
+  border-color: #6c7284;/*ボーダーの色*/
+  margin: 8px 0px 8px 0px;
+}
 /*画面右側の要素*/
 .vivid_hero_icon{
   background: #ccc;
