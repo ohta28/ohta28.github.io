@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>ビビッドアーミー</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="ビビッドアーミー.css">
+</head>
+<body>
+  <!--JavaScript適用-->
+  <script src="ビビッドアーミー.js"></script>
+  <!--ヘッダー開始-->
+  <header>
+    <div class="container">
+      <!--ロゴエリア--> <!--ロゴのカラーコードは#69c-->
+      <div class="area_logo_header">
+        <a class="logo" href="https://ohta28.github.io">
+          <img src="Logo.svg">
+        </a>
+      </div>
+      <!--ナビゲーションエリア-->
+      <nav class="area_nav_header">
+        <ul class="list_nav_header">
+          <li>
+            <a href="#">リンク1</a>
+          </li>
+          <li>
+            <a href="#">リンク2</a>
+          </li>
+          <li>
+            <a href="#">リンク3</a>
+          </li>
+          <li>
+            <a href="#">リンク4</a>
+          </li>
+          <li>
+            <a class="btn_header" href="#">メディア</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--メインの要素-->
+  <div class="main">
+    <!--画面の左半分の要素-->
+    <!--上-->
+    <!--第1要素 オプション-->
+    <div class="vivid_hero_opinion">
+    </div>
+    <!--下-->
+    <div class="vivid_hero_image">
+      <!--第2要素 英雄の画像-->
+      <div class="hero_image">
+        <div class="image" s@tyle="background: #fff;"><img src="hero_images/R_la_001.png" id="hero_images"></div>
+      </div>
+      <!--第3要素 説明文-->
+      <div class="hero_profile">
+        <div class="qqq"><!--↓この下にアイコンを入れる-->
+          <img src="hero_icons/陸軍アイコン.png">
+          <img src="hero_icons/海軍アイコン.png">
+          <img src="hero_icons/空軍アイコン.png">
+        </div>
+        <div class="hero_profile_padding"><!--↓この下に要素を入れる-->
+          <div class="hero_profile_name"><!--名前-->
+            <p>ティナ</p>
+          </div>
+          <div class="hero_profile_skill"><!--スキル-->
+            <p>致命的な一撃</p>
+            <div class="hero_profile_skill_detail">
+              <p>★5・Lv120時の性能</p>
+              <ul>
+                <li><p>戦闘開始時、ランダムな目標に2回攻撃し、35.1%のダメージを与える。</p></li>
+                <li><p>部隊採集速度+17.2%。</p></li>
+              </ul>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <!--画面の右半分の要素-->
+    <div class="vivid_hero_icon">
+      <!--R・SR英雄-->
+      <div class="hero_icon" id="R_la_001"><img src="hero_icons/R_la_001_ティナ.png"><p>ティナ</p>
+        <script>
+          document.getElementById("R_la_001").onclick = function() {
+          document.getElementById('hero_images').src='hero_images/R_la_001.png';
+          };
+        </script>
+      </div>
+      <div class="hero_icon" id="R_se_001"><img src="hero_icons/R_se_001_マコト.png"><p>マコト</p>
+        <script>
+          document.getElementById("R_se_001").onclick = function() {
+          document.getElementById('hero_images').src='hero_images/R_se_001.png';
+          };
+        </script>
+      </div>
+      <div class="hero_icon" id="R_sk_001"><img src="hero_icons/R_sk_001_キャロル.png"><p>キャロル</p>
+        <script>
+          document.getElementById("R_sk_001").onclick = function() {
+          document.getElementById('hero_images').src='hero_images/R_sk_001.png';
+          };
+        </script>
+      </div>
+      <div class="hero_icon"><img src="hero_icons/SR_la_001_アリア.png"><p>アリア</p></div>
+      <div class="hero_icon"><img src="hero_icons/SR_la_002_パッツィ.png"><p>パッツィ</p></div>
+      <div class="hero_icon"><img src="hero_icons/SR_la_003_ルミエール.png"><p>ルミエール</p></div>
+      <div class="hero_icon"><img src="hero_icons/SR_la_004_シクル.png"><p>シクル</p></div>
+      <div class="hero_icon"><img src="hero_icons/SR_la_005_エスラ.png"><p>エスラ</p></div>
+      <div class="hero_icon"><img src="hero_icons/SR_la_006_ユリアン.png"><p>ユリアン</p></div>
+      <div class="hero_icon"><img src="hero_icons/SR_la_007_ダブル(SR).png"><p>ダブル(SR)</p></div>
+      <div class="hero_icon"><img src="hero_icons/SR_se_001_パール.png"><p>パール</p></div>
+      <div class="hero_icon"><img src="hero_icons/SR_se_002_ルカ.png"><p>ルカ</p></div>
+      <div class="hero_icon"><img src="hero_icons/SR_sk_001_イザベラ.png"><p>イザベラ</p></div>
+      <div class="hero_icon"><img src="hero_icons/SR_sk_002_ソリン.png"><p>ソリン</p></div>
+      <!--陸軍SSR英雄-->
+      <div class="hero_icon"><img src="hero_icons/SSR_la_001_ラグノ.png"><p>ラグノ</p></a></div>
+      <div class="hero_icon"><img src="hero_icons/SSR_la_002_ランチ.png"><p>ランチ</p></div>
+      <div class="hero_icon"><img src="hero_icons/SSR_la_003_アイ.png"><p>アイ</p></div>
+      <div class="hero_icon"><img src="hero_icons/SSR_la_004_エイミー.png"><p>エイミー</p></div>
+      <div class="hero_icon"><img src="hero_icons/SSR_la_005_シエル.png"><p>シエル</p></div>
+      <div class="hero_icon"><img src="hero_icons/SSR_la_018_ダブル(SSR).png"><p>ダブル(SSR)</p></div>
+      <!--海軍SSR英雄-->
+      <div class="hero_icon"><img src="hero_icons/SSR_se_001_エリン.png"><p>エリン</p></div>
+      <div class="hero_icon"><img src="hero_icons/SSR_se_002_マイン.png"><p>マイン</p></div>
+      <div class="hero_icon"><img src="hero_icons/SSR_se_003_レベッカ.png"><p>レベッカ</p></div>
+      <div class="hero_icon"><img src="hero_icons/SSR_se_004_コーデリア.png"><p>コーデリア</p></div>
+      <div class="hero_icon"><img src="hero_icons/SSR_se_005_アンカ.png"><p>アンカ</p></div>
+      <!--空軍SSR英雄-->
+      <div class="hero_icon"><img src="hero_icons/SSR_sk_001_ハイム.png"><p>ハイム</p></div><!--空軍SSR英雄開始-->
+      <div class="hero_icon"><img src="hero_icons/SSR_sk_002_セリーナ.png"><p>セリーナ</p></div>
+      <div class="hero_icon"><img src="hero_icons/SSR_sk_003_リコ.png"><p>リコ</p></div>
+      <div class="hero_icon"><img src="hero_icons/SSR_sk_004_メリル.png"><p>メリル</p></div>
+      <div class="hero_icon"><img src="hero_icons/SSR_sk_005_ラシュー.png"><p>ラシュー</p></div>
+    </div>
+  </div>
+</body>
