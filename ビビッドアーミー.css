@@ -88,7 +88,7 @@ img{
 }
 .qqq img{
   height: 28px;
-  padding: 4px 0px 4px 4px;
+  padding: 4px 4px 4px 4px;
 }
 .hero_profile p{
   padding: 4px 0px 4px 0px;
@@ -96,7 +96,7 @@ img{
   color: #222;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+  f@ont-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
 }
 .hero_profile_name{
   border-bottom: 2px solid;/*ボーダー*/
