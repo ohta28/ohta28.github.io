@@ -43,15 +43,14 @@
   <!--メインの要素-->
   <div class="main">
     <!--画面の左半分の要素-->
-    <!--上-->
     <!--第1要素 オプション-->
     <div class="vivid_hero_opinion">
     </div>
     <!--下-->
     <div class="vivid_hero_image">
       <!--第2要素 英雄の画像-->
-      <div class="hero_image">
-        <div class="image" id="mydiv"><img src="hero_images/R_la_001.png" id="hero_images"></div>
+      <div class="hero_image_la" id="hero_image_background"><!--英雄の兵種によって背景画像が変わる-->
+        <div class="image"><img src="hero_images/R_la_001.png" id="hero_images"></div>
       </div>
       <!--第3要素 説明文-->
       <div class="hero_profile">
@@ -93,24 +92,30 @@
       <div class="hero_icon" id="R_la_001"><img src="hero_icons/R_la_001_ティナ.png"><p>ティナ</p>
         <script>
           document.getElementById("R_la_001").onclick = function() {
-            document.getElementById('hero_images').src='hero_images/R_la_001.png';
-            document.getElementById('hero_profile_name').innerHTML = "<p>ティナ</p>";
+            document.getElementById('hero_images').src='hero_images/R_la_001.png';/*画像の変更*/
+            var target = document.getElementById("hero_image_background");/*背景画像の変更*/
+            target.className = "hero_image_la";
+            document.getElementById('hero_profile_name').innerHTML = "<p>ティナ</p>";/*名前の変更*/
           };
         </script>
       </div>
       <div class="hero_icon" id="R_se_001"><img src="hero_icons/R_se_001_マコト.png"><p>マコト</p>
         <script>
           document.getElementById("R_se_001").onclick = function() {
-            document.getElementById('hero_images').src='hero_images/R_se_001.png';
-            document.getElementById('hero_profile_name').innerHTML = "<p>マコト</p>";
+            document.getElementById('hero_images').src='hero_images/R_se_001.png';/*画像の変更*/
+            var target = document.getElementById("hero_image_background");/*背景画像の変更*/
+            target.className = "hero_image_se";
+            document.getElementById('hero_profile_name').innerHTML = "<p>マコト</p>";/*名前の変更*/
           };
         </script>
       </div>
       <div class="hero_icon" id="R_sk_001"><img src="hero_icons/R_sk_001_キャロル.png"><p>キャロル</p>
         <script>
           document.getElementById("R_sk_001").onclick = function() {
-            document.getElementById('hero_images').src='hero_images/R_sk_001.png';
-            document.getElementById('hero_profile_name').innerHTML = "<p>キャロル</p>";
+            document.getElementById('hero_images').src='hero_images/R_sk_001.png';/*画像の変更*/
+            var target = document.getElementById("hero_image_background");/*背景画像の変更*/
+            target.className = "hero_image_sk";
+            document.getElementById('hero_profile_name').innerHTML = "<p>キャロル</p>";/*名前の変更*/
           };
         </script>
       </div>
