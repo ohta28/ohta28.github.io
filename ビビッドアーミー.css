@@ -32,7 +32,7 @@ img{
 /*画面上側の要素*/
 .vivid_hero_opinion{
   position: fixed;
-  background: #fff;
+  background: #99f;
   flex-direction: row;
   flex-wrap: wrap;
   float: left;
@@ -98,17 +98,11 @@ img{
   font-weight: 500;
   f@ont-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
 }
-.hero_profile_name{
-  border-bottom: 2px solid;/*ボーダー*/
-  border-color: #aaa;/*ボーダーの色*/
-}
 .hero_profile_name p{
   font-size: 20px;
   font-weight: 600;
 }
 .hero_profile_skill{
-  border-bottom: 2px solid;/*ボーダー*/
-  border-color: #aaa;/*ボーダーの色*/
 }
 .hero_profile_skill_detail{
   background: #b2bfcd;
@@ -122,10 +116,15 @@ img{
   padding-left: 26px;
   margin: 0px;
 }
-.border{
+.border_gray{
   border-bottom: 2px solid;/*ボーダー*/
-  border-color: #6c7284;/*ボーダーの色*/
-  margin: 8px 0px 8px 0px;
+  border-color: #aaa;/*ボーダーの色(グレー)*/
+  margin: 4px 0px 4px 0px;
+}
+.border_darkgray{
+  border-bottom: 2px solid;/*ボーダー*/
+  border-color: #6c7284;/*ボーダーの色(ダークグレー)*/
+  margin: 4px 0px 4px 0px;
 }
 /*画面右側の要素*/
 .vivid_hero_icon{
