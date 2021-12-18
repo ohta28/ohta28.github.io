@@ -14,13 +14,11 @@ img{
     width: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #777;
-  b@ackground: linear-gradient(white,grey);
+  background: #999;
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #9cf;
-  b@ackground: linear-gradient(pink,skyblue);
+  background: #59a459;
   border-radius: 5px;
 }
 /*メイン*/
@@ -32,7 +30,7 @@ img{
 /*画面上側の要素*/
 .vivid_hero_opinion{
   position: fixed;
-  background: #99f;
+  background: #cddfea;
   flex-direction: row;
   flex-wrap: wrap;
   float: left;
@@ -52,7 +50,8 @@ img{
 .image{
   padding-top: calc(((100vh - 150px) - 431.453px) / 2);
   padding-bottom: calc(((100vh - 150px) - 431.453px) / 2);
-  f@ilter: blur(1px);
+  backdrop-filter: blur(4px);/*背景画像をぼかす*/
+  background-color: rgba(255, 255, 255, 0.4);/*背景画像を少し明るくする*/
 }
 .image img{
   width: 100%;
@@ -61,20 +60,47 @@ img{
 .hero_image_la{
   width: 285px;
   height: 100%;
-  float: left;
-  background: red;/*↓背景の画像*/
+  float: left;/*↓背景の画像(陸)*/
+  background-image: url(hero_images/背景_陸.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .hero_image_se{
   width: 285px;
   height: 100%;
-  float: left;
-  background: blue;/*↓背景の画像*/
+  float: left;/*↓背景の画像(海)*/
+  background-image: url(hero_images/背景_海.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero_image_se2{
+  width: 285px;
+  height: 100%;
+  float: left;/*↓背景の画像(海2)*/
+  background-image: url(hero_images/背景_海2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .hero_image_sk{
   width: 285px;
   height: 100%;
-  float: left;
-  background: skyblue;/*↓背景の画像*/
+  float: left;/*↓背景の画像(空)*/
+  background-image: url(hero_images/背景_空.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero_image_sk2{
+  width: 285px;
+  height: 100%;
+  float: left;/*↓背景の画像(空2)*/
+  background-image: url(hero_images/背景_空2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*右下の要素*//*英雄の説明、ここ大事*/
