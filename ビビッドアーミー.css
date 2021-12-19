@@ -46,7 +46,7 @@ img{
   width: 570px;
   height: calc(100% - 150px);
   bottom: 0px;/*下寄せ*/
-  translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 .image{
   backdrop-filter: blur(4px);/*背景画像をぼかす*/
