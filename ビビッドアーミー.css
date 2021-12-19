@@ -48,10 +48,11 @@ img{
   bottom: 0px;/*下寄せ*/
 }
 .image{
-  padding-top: calc(((100vh - 150px) - 431.453px) / 2);
-  padding-bottom: calc(((100vh - 150px) - 431.453px) / 2);
   backdrop-filter: blur(4px);/*背景画像をぼかす*/
   background-color: rgba(255, 255, 255, 0.4);/*背景画像を少し明るくする*/
+  padding-top: calc(((100vh - 150px) - 431.453px) / 2);
+  padding-bottom: calc(((100vh - 150px) - 431.453px) / 2);
+  z-index: 10;/*最前列に*/
 }
 .image img{
   width: 100%;
