@@ -46,13 +46,14 @@ img{
   width: 570px;
   height: calc(100% - 150px);
   bottom: 0px;/*下寄せ*/
+  translate3d(0,0,0);
 }
 .image{
   backdrop-filter: blur(4px);/*背景画像をぼかす*/
   background-color: rgba(255, 255, 255, 0.4);/*背景画像を少し明るくする*/
   padding-top: calc(((100vh - 150px) - 431.453px) / 2);
   padding-bottom: calc(((100vh - 150px) - 431.453px) / 2);
-  z-index: 10;/*最前列に*/
+  z-index: 2;/*最前列に*/
 }
 .image img{
   width: 100%;
@@ -66,6 +67,7 @@ img{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: 1;
 }
 .hero_image_se{
   width: 285px;
@@ -75,6 +77,7 @@ img{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: 1;
 }
 .hero_image_se2{
   width: 285px;
@@ -84,6 +87,7 @@ img{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: 1;
 }
 .hero_image_sk{
   width: 285px;
@@ -93,6 +97,7 @@ img{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: 1;
 }
 .hero_image_sk2{
   width: 285px;
@@ -102,6 +107,7 @@ img{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: 1;
 }
 
 /*右下の要素*//*英雄の説明、ここ大事*/
