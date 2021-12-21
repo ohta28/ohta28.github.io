@@ -62,7 +62,6 @@ img{
   height: 100%;
   float: left;/*↓背景の画像(陸)*/
   background-image: url(hero_images/背景_陸.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -71,7 +70,6 @@ img{
   height: 100%;
   float: left;/*↓背景の画像(海)*/
   background-image: url(hero_images/背景_海.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -80,7 +78,6 @@ img{
   height: 100%;
   float: left;/*↓背景の画像(海2)*/
   background-image: url(hero_images/背景_海2.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -89,7 +86,6 @@ img{
   height: 100%;
   float: left;/*↓背景の画像(空)*/
   background-image: url(hero_images/背景_空.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -98,7 +94,6 @@ img{
   height: 100%;
   float: left;/*↓背景の画像(空2)*/
   background-image: url(hero_images/背景_空2.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
