@@ -47,11 +47,9 @@ img{
   height: calc(100% - 150px);
   bottom: 0px;/*下寄せ*/
 }
-.hero_image_smoke{
+.hero_image_image{
   backdrop-filter: blur(4px);/*背景画像をぼかす*/
   background-color: rgba(255, 255, 255, 0.4);/*背景画像を少し明るくする*/
-}
-.hero_image_image{
   padding-top: calc(((100vh - 150px) - 431.453px) / 2);
   padding-bottom: calc(((100vh - 150px) - 431.453px) / 2);
 }
@@ -112,7 +110,8 @@ img{
   padding: 0px 0px 0px 0px;
 }
 .hero_profile_padding{
-  padding: 0px 10px 0px 10px;
+  p@adding: 0px 10px 0px 10px;
+  margin: 0px 10px 0px 10px;
 }
 .qqq{
   background: #9bd8c4;
