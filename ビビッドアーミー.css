@@ -30,7 +30,7 @@ img{
 /*画面上側の要素*/
 .vivid_hero_opinion{
   position: fixed;
-  background: #cddfea;
+  background: #b0bec5;
   flex-direction: row;
   flex-wrap: wrap;
   float: left;
@@ -42,7 +42,7 @@ img{
 /*左下側の要素*/
 .vivid_hero_image{
   position: fixed;
-  b@ackground: #0aa;
+  background: #ccc;
   width: 570px;
   height: calc(100% - 150px);
   bottom: 0px;/*下寄せ*/
@@ -110,7 +110,6 @@ img{
   padding: 0px 0px 0px 0px;
 }
 .hero_profile_padding{
-  p@adding: 0px 10px 0px 10px;
   margin: 0px 10px 0px 10px;
 }
 .qqq{
@@ -127,6 +126,7 @@ img{
 }
 .hero_profile p{
   padding: 4px 0px 4px 0px;
+  m@argin: 4px 0px 4px 0px;
   margin: 0px;
   color: #222;
   font-size: 16px;
@@ -163,14 +163,14 @@ img{
 }
 /*画面右側の要素*/
 .vivid_hero_icon{
-  background: #ccc;
+  background: #ddd;
   f@lex-direction: row;
   f@lex-wrap: wrap;
   float: right;
   w@idth: 500px;
   width: calc(100% - 570px - 20px);
   height: 100%;
-  padding: 2% 10px 2% 10px;
+  padding: 16px 10px 16px 10px;
 }
 /*グリッドの作成*/
 .vivid_hero_icon{
@@ -193,7 +193,7 @@ img{
 .hero_icon{
   box-shadow: 0 0 4px gray;/*影*/
   border-radius: 9.5px;
-  margin: 6px 6px 6px 6px;
+  margin: 8px 6px 8px 6px;
   background-color: #50586C;
 }
 .hero_icon img{
