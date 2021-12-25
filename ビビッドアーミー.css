@@ -129,15 +129,33 @@ img{
   m@argin: 4px 0px 4px 0px;
   margin: 0px;
   color: #222;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 500;
+  f@ont-family: YuGothic,'Yu Gothic',sans-serif;
   f@ont-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
 }
 .hero_profile_name p{
-  font-size: 20px;
+  c@olor: #004237;
+  text-align: center;
+  font-size: 1.3em;
   font-weight: 600;
 }
-.hero_profile_skill{
+.hero_profile_heading{
+  position: relative;
+  padding: 0px;
+  margin: 8px 0px 4px 0px;
+  background:  linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    padding: 3px;/*ボーダーの変わり*/
+    border-radius: 8px;
+}
+.hero_profile_heading p{
+  text-align: center;
+  padding: 0px 4px 0px 4px;
+  font-size: 1em;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.6);/*背景を薄く*/
+  color: #004237;
+    border-radius: 4px;
 }
 .hero_profile_skill_detail{
   background: #b2bfcd;
@@ -159,7 +177,7 @@ img{
 .border_darkgray{
   border-bottom: 2px solid;/*ボーダー*/
   border-color: #6c7284;/*ボーダーの色(ダークグレー)*/
-  margin: 4px 0px 4px 0px;
+  margin: 8px 0px 8px 0px;
 }
 /*画面右側の要素*/
 .vivid_hero_icon{
