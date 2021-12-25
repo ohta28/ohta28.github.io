@@ -8,12 +8,15 @@ body{
 }
 /*フォント*/
 body{
-  font-family: sans-serif;
+  font-family: 'Arial','メイリオ', Meiryo,'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  f@ont-family: sans-serif;
 }
 /*ヘッダー*/
 header{
   color: #fff;
-  background: #333;
+  background: #333;/*カラーコードは#333*/
+  b@ackground: rgba(51, 51, 51, 0.8);
+  backdrop-filter: blur(4px);
   position: fixed;
   top: 0;
   left: 0;
@@ -53,7 +56,7 @@ ul{
 }
 .list_nav_header a{
   color: #fff;
-  font: 15px sans-serif;
+  font-size: 15px;
 }
 .list_nav_header .btn_header{ /*メディアボタン*/
   color: fff;
