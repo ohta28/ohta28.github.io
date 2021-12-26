@@ -134,12 +134,32 @@ img{
   f@ont-family: YuGothic,'Yu Gothic',sans-serif;
   f@ont-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
 }
+/*英雄の名前＆説明*/
+.hero_profile_name{
+  display: flex;
+  align-items: center;
+}
+.hero_profile_name:before,
+.hero_profile_name:after {
+  content: "";
+  height: 3px;
+  flex-grow: 1;
+}
+.hero_profile_name:before {
+  background: linear-gradient(-90deg, #004237cc, transparent);
+  margin-right: 0.5rem;
+}
+.hero_profile_name:after {
+  background: linear-gradient(90deg, #004237cc, transparent);
+  margin-left: 0.5rem;
+}
 .hero_profile_name p{
   c@olor: #004237;
   text-align: center;
   font-size: 1.3em;
   font-weight: 600;
 }
+/*英雄の説明*/
 .hero_profile_heading{
   position: relative;
   padding: 0px;
@@ -155,7 +175,7 @@ img{
   font-weight: 600;
   background: rgba(255, 255, 255, 0.6);/*背景を薄く*/
   color: #004237;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 .hero_profile_skill_detail{
   b@ackground: #b2bfcd;
@@ -175,9 +195,9 @@ img{
   border-color: #aaa;/*ボーダーの色(グレー)*/
   margin: 4px 0px 4px 0px;
 }
-.border_darkgray{
+.border_white{
   border-bottom: 2px solid;/*ボーダー*/
-  border-color: #6c7284;/*ボーダーの色(ダークグレー)*/
+  border-color: #fff;/*ボーダーの色(白)*/
   margin: 8px 0px 8px 0px;
 }
 /*画面右側の要素*/
@@ -210,7 +230,8 @@ img{
 }
 /*英雄のアイコン*/
 .hero_icon{
-  box-shadow: 0 0 4px gray;/*影*/
+  b@ox-shadow: 0 0 4px gray;/*影*/
+    box-shadow: 0 0 2px gray;/*影*/
   border-radius: 9.5px;
   margin: 8px 6px 8px 6px;
   background-color: #50586C;
