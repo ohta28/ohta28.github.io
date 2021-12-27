@@ -30,7 +30,7 @@ img{
 /*画面上側の要素*/
 .vivid_hero_opinion{
   position: fixed;
-  background: #b0bec5;
+  background: #9ccc65;
   flex-direction: row;
   flex-wrap: wrap;
   float: left;
@@ -38,6 +38,8 @@ img{
   h@eight: calc(15% - 7.5px);
   height: 100px;
   top: 50px;/*上寄せの必要はない*/
+}
+.vivid_hero_opinion p{
 }
 /*左下側の要素*/
 .vivid_hero_image{
@@ -98,7 +100,7 @@ img{
   background-position: center;
 }
 
-/*右下の要素*//*英雄の説明、ここ大事*/
+/*右下の要素*//*英雄の説明--------ここ*/
 .hero_profile{
   overflow: hidden;
   background: #eee;
@@ -126,15 +128,12 @@ img{
 }
 .hero_profile p{
   padding: 4px 0px 4px 0px;
-  m@argin: 4px 0px 4px 0px;
   margin: 0px;
   color: #222;
-  font-size: 1em;
-  font-weight: 500;
-  f@ont-family: YuGothic,'Yu Gothic',sans-serif;
-  f@ont-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
-/*英雄の名前＆説明*/
+/*---英雄の名前＆説明---*/
 .hero_profile_name{
   display: flex;
   align-items: center;
@@ -142,7 +141,7 @@ img{
 .hero_profile_name:before,
 .hero_profile_name:after {
   content: "";
-  height: 3px;
+  height: 2px;
   flex-grow: 1;
 }
 .hero_profile_name:before {
@@ -156,10 +155,10 @@ img{
 .hero_profile_name p{
   c@olor: #004237;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 20px;
   font-weight: 600;
 }
-/*英雄の説明*/
+
 .hero_profile_heading{
   position: relative;
   padding: 0px;
@@ -171,15 +170,16 @@ img{
 .hero_profile_heading p{
   text-align: center;
   padding: 0px 4px 0px 4px;
-  font-size: 1em;
+  font-size: 16px;
   font-weight: 600;
   background: rgba(255, 255, 255, 0.6);/*背景を薄く*/
   color: #004237;
     border-radius: 5px;
 }
+/*英雄の説明*/
 .hero_profile_skill_detail{
   b@ackground: #b2bfcd;
-  background: linear-gradient(180deg, rgba(178,191,205,1) 48%, rgba(202,216,232,1) 52%);
+  background: linear-gradient(180deg, rgba(202,216,232,1) 48%, rgba(224,232,240,1) 52%);
   border-radius: 9.5px;
   box-shadow: 0 0 4px gray;/*影*/
   padding: 0px 5px 0px 5px;
@@ -190,15 +190,29 @@ img{
   padding-left: 26px;
   margin: 0px;
 }
+/*装飾*/
 .border_gray{
+  border-radius: 1px;/*ボーダーの丸み*/
   border-bottom: 2px solid;/*ボーダー*/
   border-color: #aaa;/*ボーダーの色(グレー)*/
   margin: 4px 0px 4px 0px;
 }
 .border_white{
+  border-radius: 1px;/*ボーダーの丸み*/
   border-bottom: 2px solid;/*ボーダー*/
   border-color: #fff;/*ボーダーの色(白)*/
   margin: 8px 0px 8px 0px;
+    box-shadow: 0 0 2px #fff;/*影*/
+}
+.marker_green{
+  color: #063;
+  background: #9f9;
+  padding: 2px;
+  margin: 0px 1px 0px 1px;
+  b@order: 1px solid;/*ボーダー*/
+  b@order-color: #eee;
+  box-shadow: 0 0 2px #a5d6a7;/*影*/
+  border-radius: 2px;/*丸み*/
 }
 /*画面右側の要素*/
 .vivid_hero_icon{
@@ -241,9 +255,10 @@ img{
   width: 100%;
 }
 .hero_icon p{
+  font-weight: 300;
   text-align: center;
-  padding: 3px 0px;
-  font-size: 12px;
+  padding: 2px 0px 3px 0px;
+  font-size: 13px;
   margin: 0px;
   color: #fff;
 }
