@@ -27,10 +27,10 @@ img{
   max-width: 1140px;/*1180-20-20*//*-------------------*/
   margin: auto;
 }
-/*画面上側の要素*/
+/*画面左上側の要素*/
 .vivid_hero_opinion{
   position: fixed;
-  background: #9ccc65;
+  background: #ccc;
   flex-direction: row;
   flex-wrap: wrap;
   float: left;
@@ -204,16 +204,26 @@ img{
   margin: 8px 0px 8px 0px;
     box-shadow: 0 0 2px #fff;/*影*/
 }
-.marker_green{
-  color: #063;
-  background: #9f9;
-  padding: 2px;
+/*↓マーカー*/
+.marker_red_1{/*マーカー赤(1 - 攻撃力)*/
+  background: linear-gradient(transparent 65%, #e78686 65%);
+  padding: 2px 1px 2px 1px;
   margin: 0px 1px 0px 1px;
-  b@order: 1px solid;/*ボーダー*/
-  b@order-color: #eee;
-  box-shadow: 0 0 2px #a5d6a7;/*影*/
   border-radius: 2px;/*丸み*/
 }
+.marker_green_2{/*マーカーみどり(緑 - 野外採集速度)*/
+  background: linear-gradient(transparent 65%, #4fd158 65%);
+  padding: 2px 1px 2px 1px;
+  margin: 0px 1px 0px 1px;
+  border-radius: 2px;/*丸み*/
+}
+.marker_blue_2{/*マーカーみどり(青 - 進軍速度)*/
+  background: linear-gradient(transparent 65%, #4fb4d1 65%);
+  padding: 2px 1px 2px 1px;
+  margin: 0px 1px 0px 1px;
+  border-radius: 2px;/*丸み*/
+}
+
 /*画面右側の要素*/
 .vivid_hero_icon{
   background: #ddd;
