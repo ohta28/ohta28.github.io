@@ -177,20 +177,32 @@ img{
     border-radius: 5px;
 }
 /*英雄の説明*/
-.hero_profile_skill_detail{
-  b@ackground: #b2bfcd;
+.hero_profile_skill_detail_a{
   background: linear-gradient(180deg, rgba(202,216,232,1) 48%, rgba(224,232,240,1) 52%);
   border-radius: 9.5px;
   box-shadow: 0 0 4px gray;/*影*/
   padding: 0px 5px 0px 5px;
   margin: 4px 0px 8px 0px;
 }
-.hero_profile_skill_detail ul{
+.hero_profile_skill_detail_a ul{
   list-style: decimal;/*リストに使う点*/
   padding-left: 26px;
   margin: 0px;
 }
-/*装飾*/
+.hero_profile_skill_detail_b{
+  b@ackground: linear-gradient(180deg, rgba(202,216,232,1) 48%, rgba(224,232,240,1) 52%);
+  background: #e0e8f0;
+  border-radius: 9.5px;
+  box-shadow: 0 0 4px gray;/*影*/
+  padding: 0px 5px 0px 5px;
+  margin: 4px 0px 8px 0px;
+}
+.hero_profile_skill_detail_b ul{
+  list-style: decimal;/*リストに使う点*/
+  padding-left: 26px;
+  margin: 0px;
+}
+/*↓装飾*/
 .border_gray{
   border-radius: 1px;/*ボーダーの丸み*/
   border-bottom: 2px solid;/*ボーダー*/
@@ -211,14 +223,14 @@ img{
   margin: 0px 1px 0px 1px;
   border-radius: 2px;/*丸み*/
 }
-.marker_green_2{/*マーカーみどり(緑 - 野外採集速度)*/
-  background: linear-gradient(transparent 65%, #4fd158 65%);
+.marker_green_2{/*マーカーみどり(2 - 野外採集速度)*/
+  background: linear-gradient(transparent 65%, #67bf65 65%);
   padding: 2px 1px 2px 1px;
   margin: 0px 1px 0px 1px;
   border-radius: 2px;/*丸み*/
 }
-.marker_blue_2{/*マーカーみどり(青 - 進軍速度)*/
-  background: linear-gradient(transparent 65%, #4fb4d1 65%);
+.marker_blue_2{/*マーカー水色(2 - 進軍速度)*/
+  background: linear-gradient(transparent 65%, #65bfbe 65%);
   padding: 2px 1px 2px 1px;
   margin: 0px 1px 0px 1px;
   border-radius: 2px;/*丸み*/
@@ -255,7 +267,7 @@ img{
 /*英雄のアイコン*/
 .hero_icon{
   b@ox-shadow: 0 0 4px gray;/*影*/
-    box-shadow: 0 0 2px gray;/*影*/
+    box-shadow: 0 0 6px #aaa;/*影*/
   border-radius: 9.5px;
   margin: 8px 6px 8px 6px;
   background-color: #50586C;
