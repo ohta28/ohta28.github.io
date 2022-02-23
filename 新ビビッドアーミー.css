@@ -1,0 +1,157 @@
+body{
+  background: #eee;
+  padding: 0px 0px 0px 0px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+img{
+  vertical-align: top;/*アイコン下の余白を消す*/
+}
+/*スクロールバー*/
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  b@order-radius: 2px;
+  background: #5d7683;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: #81a4dd;
+  border: 1px solid #5d7683;
+  margin-top: 10px;
+}
+/*一番上の要素*/
+.first{
+  padding-top: 50px;
+  width: 100%;
+  height: 100px;
+  background: #ddd;
+}
+/*メインの要素*/
+.main_parent{
+  padding: 0px 16px 0px 16px;
+  background: #383B4E;
+  max-width: 1140px;/*1180-20-20*//*-------------------*/
+  margin: auto;
+  m@argin-top: 20px;
+  m@argin-bottom: 20px;
+    b@ox-shadow: 0px 0px 20px #eee;
+    b@order-radius: 20px;
+}
+.main{
+  width: 100%;
+  height: calc(20px + (106.656px + 24.5px + 16px) *5);/*最後の掛け算はグリッドの段数*/
+  b@order-right: 4px solid;/*ボーダー*/
+  b@order-left: 4px solid;/*ボーダー*/
+  border-color: #777;/*ボーダーの色(グレー)*/
+}
+@media(max-width:1180px){/*以下_グリッドの収縮開始*/
+  .main{
+    h@eight: calc(20px + (106.656px + 24.5px + 16px) *9);/*最後の掛け算はグリッドの段数*/
+    height: calc(((((100vw - 660px) / 5 - 12px) / 92 * 106.656) + 40.5px) * 5 + 20px);
+  }
+}
+@media(max-width:1084px){/*以下*/
+  .main{
+    height: calc(20px + (106.656px  + 24.5px + 16px) *7);/*最後の掛け算はグリッドの段数*/
+  }
+}
+/*メインの区切り*/
+.main_parent_line_1{
+  width: 100%;
+  height: 6px;
+  background: #5B6495;
+  margin-top: 20px;
+}
+.main_parent_line_2{
+  width: 100%;
+  height: 6px;
+  background: #5B6495;
+  margin-bottom: 20px;
+}
+
+/*メイン - 左側の要素(情報)*/
+.hero_info{
+  background: #5ea7c7;
+  width: 600px;
+  height: 100%;
+  float: left;
+}
+/*メイン - 右側の要素(グリッド)*/
+.hero_icon_grid{
+  b@ackground: #ccc;
+  background: #cbced5;
+  width: calc(100% - 600px);
+  height: 100%;
+  float: right;
+}
+.vivid_hero_icon_grid{
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr)
+}
+@media(max-width:1180px){/*以下(1180px目を含む)*/
+  .vivid_hero_icon_grid{
+    b@ackground: red;
+  }
+}
+@media(max-width:1186px){/*以下(1186px目から適用)*/
+  .vivid_hero_icon_grid{
+    grid-template-columns: repeat(5,1fr);
+  }
+}
+@media(max-width:1084px){/*以下(1084px目から適用)*/
+  .vivid_hero_icon_grid{
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+
+.hero_icon{
+  box-shadow: 0px 2px 1px 0px #333741;/*影*/
+  border-radius: 9.5px;
+  margin: 8px 6px 8px 6px;
+  background-color: #50586C;
+  transition-duration: 0.2s;
+}
+.hero_icon img{
+  border-radius: 9.5px;
+  width: 100%;
+	  user-drag: none;/*画像のドラッグを禁止*/
+	  -webkit-user-drag: none;
+	  -moz-user-select: none;
+}
+.hero_icon p{
+  font-weight: 300;
+  text-align: center;
+  padding: 2px 0px 3px 0px;
+  font-size: 12.5px;
+  margin: 0px;
+  color: #fff;
+}
+.hero_icon:hover{
+  background: #5e6a89;
+  box-shadow: 0px 2px 1px 1px #333741;*影*/
+}
+
+/*フッター*/
+.footer{
+  padding: 10px 0 10px 0;
+  width: 100%;
+  height: auto;
+  background: #333;
+}
+.footer p{
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  color: #fff;
+}
+.footer_line{
+  border-radius: 1px;/*ボーダーの丸み*/
+  border-bottom: 2px solid;/*ボーダー*/
+  border-color: #aaa;/*ボーダーの色(グレー)*/
+  margin: 4px 30px 4px 30px;
+}
