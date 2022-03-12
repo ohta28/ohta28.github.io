@@ -3,8 +3,9 @@
 <head>
   <title>新ビビッドアーミー</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="新header.css">
   <link rel="stylesheet" href="新ビビッドアーミー.css">
+  <link rel="stylesheet" href="新ビビッドアーミー_ソート.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
   </style>
@@ -12,43 +13,71 @@
 <body>
   <!--ヘッダー開始-->
   <header>
-    <div class="container">
-      <!--ロゴエリア--> <!--ロゴのカラーコードは#69c-->
-      <div class="area_logo_header">
-        <a class="logo" href="https://ohta28.github.io">
+    <div class="header">
+      <!--ロゴ-->
+      <div class="header_logo">
+        <a class="header_logo_svg" href="https://ohta28.github.io">
           <img src="Logo.svg">
         </a>
       </div>
-      <!--ナビゲーションエリア-->
-      <nav class="area_nav_header">
-        <ul class="list_nav_header">
-          <li>
-            <a href="#">リンク1</a>
-          </li>
-          <li>
-            <a href="#">リンク2</a>
-          </li>
-          <li>
-            <a href="#">リンク3</a>
-          </li>
-          <li>
-            <a href="#">リンク4</a>
-          </li>
-          <li>
-            <a class="btn_header" href="#">メディア</a>
-          </li>
+      <!--リスト-->
+      <nav class="header_list">
+        <ul>
+          <li><div class="header_list_line" style="height: 32px;"></div></li>
+          <li><div class="header_list_div"><a href="https://google.com">リスト1</a></div></li>
+          <li><div class="header_list_line"></div></li>
+          <li><div class="header_list_div"><a href="#">リスト2</a></div></li>
+          <li><div class="header_list_line"></div></li>
+          <li><div class="header_list_div"><a href="#">リスト3</a></div></li>
+          <li><div class="header_list_line"></div></li>
+          <li><div class="header_list_div"><a href="#">リスト4</a></div></li>
+          <li><div class="header_list_line" style="height: 32px;"></div></li>
         </ul>
       </nav>
+      <!--ドロップメニュー-->
+      <div class="header_menu">
+        <div class="header_menu_button"><p>サイトマップ</p></div>
+      </div>
+      <div class="header_menu_drop" id="header_menu_drop">
+        <div class="header_menu_drop_1">
+          <ul>
+            <li><div style="margin-left: 46px;"><a href="#">リスト5</a></div></li>
+            <li><div style="margin-left: 28px;"><a href="#">リスト6</a></div></li>
+            <li><div style="margin-left: 16px;"><a href="#">リスト7</a></div></li>
+            <li><div style="margin-left: 14px;"><a href="#">リスト8</a></div></li>
+            <li><div style="margin-left: 32px;"><a href="#">リスト9</a></div></li>
+            <li><div style="margin-left: 82px;"><a href="#">リスト10</a></div></li>
+          </ul>
+        </div>
+        <div class="header_menu_drop_line"></div>
+        <div class="header_menu_drop_2">
+          <ul>
+            <li><div style="margin-left: 8px;"><a href="#">リスト11</a></div></li>
+            <li><div style="margin-left: 8px;"><a href="#">リスト12</a></div></li>
+            <li><div style="margin-left: 8px;"><a href="#">リスト13</a></div></li>
+            <li><div style="margin-left: 8px;"><a href="#">リスト14</a></div></li>
+            <li><div style="margin-left: 8px;"><a href="#">リスト15</a></div></li>
+            <li><div style="margin-left: 8px;"><a href="#">リスト16</a></div></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </header>
+  <!--ヘッダー終了！！！-->
   <div class="first">
   </div>
   <div class="main_parent_line_1"></div>
   <div class="main_parent">
     <div class="main">
-      <div class="hero_info"></div>
+      <div class="hero_info">
+        <div class="hero_info_stickey"><!--ここから画面に張り付く-->
+          <div class="hero_opinion">
+          </div>
+          <div class="hero_profile"></div>
+        </div>
+      </div>
       <div class="hero_icon_grid">
-        <div class="vivid_hero_icon_grid">
+        <div class="vivid_hero_icon_grid" id="vivid_hero_icon_grid">
           <!--R・SR英雄-->
           <div class="hero_icon"><img src="hero_icons/R_la_001_ティナ.png"><p>ティナ</p></div>
           <div class="hero_icon"><img src="hero_icons/R_se_001_マコト.png"><p>マコト</p></div>
@@ -70,14 +99,24 @@
           <div class="hero_icon"><img src="hero_icons/SSR_la_003_アイ.png"><p>アイ</p></div>
           <div class="hero_icon"><img src="hero_icons/SSR_la_004_エイミー.png"><p>エイミー</p></div>
           <div class="hero_icon"><img src="hero_icons/SSR_la_005_シエル.png"><p>シエル</p></div>
+          <div class="hero_icon"><img src="hero_icons/SSR_la_006_ポーラ.png"><p>ポーラ</p></div>
+          <div class="hero_icon"><img src="hero_icons/SSR_la_007_八乙女撫子.png"><p>八乙女撫子</p></div>
           <!--海軍SSR英雄-->
           <div class="hero_icon"><img src="hero_icons/SSR_se_001_エリン.png"><p>エリン</p></div>
           <div class="hero_icon"><img src="hero_icons/SSR_se_002_マイン.png"><p>マイン</p></div>
           <div class="hero_icon"><img src="hero_icons/SSR_se_003_レベッカ.png"><p>レベッカ</p></div>
           <div class="hero_icon"><img src="hero_icons/SSR_se_004_コーデリア.png"><p>コーデリア</p></div>
           <div class="hero_icon"><img src="hero_icons/SSR_se_005_アンカ.png"><p>アンカ</p></div>
+          <div class="hero_icon"><img src="hero_icons/SSR_se_006_フーカ.png"><p>フーカ</p></div>
+          <div class="hero_icon"><img src="hero_icons/SSR_se_007_ベアトリス.png"><p>ベアトリス</p></div>
           <!--空軍SSR英雄-->
           <div class="hero_icon"><img src="hero_icons/SSR_sk_001_ハイム.png"><p>ハイム</p></div>
+          <div class="hero_icon"><img src="hero_icons/SSR_sk_002_セリーナ.png"><p>セリーナ</p></div>
+          <div class="hero_icon"><img src="hero_icons/SSR_sk_003_リコ.png"><p>リコ</p></div>
+          <div class="hero_icon"><img src="hero_icons/SSR_sk_004_メリル.png"><p>メリル</p></div>
+          <div class="hero_icon"><img src="hero_icons/SSR_sk_005_ラシュー.png"><p>ラシュー</p></div>
+          <div class="hero_icon"><img src="hero_icons/SSR_sk_006_フライ.png"><p>フライ</p></div>
+          <div class="hero_icon"><img src="hero_icons/SSR_sk_007_ミミ.png"><p>ミミ</p></div>
         </div>
       </div>
     </div>
@@ -87,4 +126,6 @@
     <div class="footer_line"></div>
     <p>© 2021-2022 ohta28</p>
   </div>
+  <!--JavaScript適用枠 1地番下に!!-->
+  <script src="header_menu.js"></script>
 </body>
