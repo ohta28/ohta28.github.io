@@ -1,0 +1,201 @@
+.red{
+  background: red;
+}
+/*余白*/
+body{
+  padding: 50px 50px 0px 50px;
+  margin: 0px;
+}
+.container{
+  padding: 0px 10px 0px 20px;
+}
+/*フォント*/
+body{
+  font-family: 'Arial','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Noto Sans JP',sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+    f@ont-family: 'Noto Sans JP', sans-serif;
+}
+/*ヘッダー*/
+header{
+  b@ackground: rgba(51, 51, 51, 0.9);
+    b@ackground: linear-gradient(120deg, rgba(1,35,69,1) 0%, rgba(0,170,197,0.9) 40%, rgba(231,171,185,1) 100%);
+    background: linear-gradient(135deg, rgba(0,37,74,1) 0%, rgba(0,158,184,0.9) 40%, rgba(111,201,217,0.9) 65%, rgba(221,159,178,1) 85%, rgba(255,174,216,1) 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+    border-bottom: solid 1px #ffffff66;
+    z-index: 10;
+}
+.header{
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+/*ロゴ*/
+.header_logo .header_logo_svg{
+  display: block;
+  margin-left: 30px;
+}
+.header_logo .header_logo_svg img{
+  height: 50px;
+}
+/*リスト*/
+.header_list{
+  list-style: none;
+  padding: 0;
+  p@adding: 0 0 0 10px;
+  padding-left: calc(100vw - 128.125px - 390px - 150px);
+  margin: 0;
+  m@argin-left: auto;
+  height: 50px;
+  backdrop-filter: blur(3px);
+}
+.header_list ul{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  align-items: center;
+}
+.header_list li{
+  list-style: none;
+}
+.header_list_div{
+  height: 40px;
+  width: 70px;
+  border-radius: 4px;
+  transition-duration: 0.2s;
+  text-align: center;
+}
+.header_list_div:hover{
+background: #ffffff33;
+}
+.header_list_div a{
+  display: block;/*paddingなどを使えるように*/
+  padding: 8.75px 0 8.75px 0;
+  color: #fff;
+  text-decoration: none;/*URLの下線削除*/
+  font-size: 15px;
+}
+.header_list_line{
+  height: 22px;
+  width: 2px;
+  background: #ffffff99;
+  border-radius: 1px;
+  margin: 0 10px 0 10px;
+}
+/*ドロップメニュー*/
+.header_menu{
+  padding: 9px 20px 9px 10px;
+  height: 32px;
+  width: 120px;
+  background: #fff0;
+}
+.header_menu_button{
+  height: 100%;
+  width: 100%;
+  background: #fff9;
+  border-radius: 4px;
+}
+.header_menu_button p{
+  color: #333;
+  text-align: center;
+  padding: 4.25px 0 4.25px 0;
+  margin: 0;
+  font-size: 15px;
+}
+.header_menu:hover + .header_menu_drop{
+    visibility: visible;
+    opacity: 1;
+    top: 50px;
+    right: 0px;
+    width: 560px;
+}
+.header_menu_drop:hover{
+    visibility: visible;
+    opacity: 1;
+    top: 50px;
+    right: 0px;
+    width: 560px;
+}
+.header_menu_drop{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+  background: #e3eaede6;
+  b@ackground: linear-gradient(135deg, #eeeeeee6 30%, #fff6f6 70%);
+  backdrop-filter: blur(8px);
+  z-index: 10;
+
+  position: absolute;
+  height: 250px;
+  h@eight: calc(100vh - 50px);
+  width: 540px;
+  padding: 20px;
+  top: 50px;
+  right: 0px;
+  b@ox-shadow: 0px 0px 3px 0px #fff;
+  box-shadow: inset 14px -18px 0px -12px #2a9ba4, inset 20px 10px 0px -12px #72c7d6;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 20% 0% 25% 45% / 80% 5% 25% 70% ;
+  display: flex;
+}
+.header_menu_drop_1{
+  height: 235px;
+  width: calc((100% - 12px) / 2);
+  padding: 7.5px 0 7.5px 0;
+  b@ackground: #65a2d11a;
+}
+.header_menu_drop_2{
+  height: 235px;
+  width: calc((100% - 12px) / 2);
+  padding: 7.5px 0 7.5px 0;
+  b@ackground: #65a2d11a;
+}
+.header_menu_drop_line{
+  height: 250px;
+  width: 2px;
+  margin: 0 5px 0 5px;
+  background: #b5c4d1;
+  border-radius: 1px;
+}
+.header_menu_drop ul{
+  padding: 0;
+  margin: 0;
+}
+.header_menu_drop li{
+  list-style: none;
+}
+.header_menu_drop_1 div{
+  height: 39px;
+  border-radius: 4px;
+  b@ackground: #b2d6c4;
+  width: fit-content;/*幅を子要素に合わせる*/
+  transition-duration: 0.2s;
+}
+.header_menu_drop_1 div:hover{
+  background: #7bd89680;
+}
+.header_menu_drop_2 div{
+  height: 39px;
+  border-radius: 4px;
+  b@ackground: #b2d6c4;
+  width: fit-content;/*幅を子要素に合わせる*/
+  transition-duration: 0.2s;
+}
+.header_menu_drop_2 div:hover{
+  background: #7bd89680;
+}
+.header_menu_drop a{
+  padding: 7.5px 8px 7.5px 6px;
+  color: #333;
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+}
+.header_menu_drop a:hover{
+  color: #222;
+}
