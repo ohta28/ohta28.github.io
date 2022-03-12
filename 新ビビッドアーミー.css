@@ -13,75 +13,120 @@ img{
 }
 ::-webkit-scrollbar-track {
   b@order-radius: 2px;
-  background: #5d7683;
+  b@ackground: #d8d8d8;
+  background: #dedede;
+  b@ackground: linear-gradient(90deg, rgba(255,255,255,0) 43%, rgba(28,45,63,1) 43%, rgba(28,45,63,1) 57%, rgba(255,255,255,0) 57%);
+  b@ox-shadow: inset 0 0 3px #000;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 6px;
   background: #81a4dd;
-  border: 1px solid #5d7683;
-  margin-top: 10px;
+  border: 1px solid #eee;
+}
+/*テキストなどを選択したときの*/
+::selection{
+  background: #3ca9db99;
+  color: #fff;
+}
+img::selection{
+  background: #7098dc66;
 }
 /*一番上の要素*/
 .first{
   padding-top: 50px;
   width: 100%;
   height: 100px;
-  background: #ddd;
+  background: #d8d8d8;
 }
 /*メインの要素*/
 .main_parent{
-  padding: 0px 16px 0px 16px;
+  padding: 0px 20px 0px 20px;
   background: #383B4E;
   max-width: 1140px;/*1180-20-20*//*-------------------*/
   margin: auto;
-  m@argin-top: 20px;
-  m@argin-bottom: 20px;
-    b@ox-shadow: 0px 0px 20px #eee;
-    b@order-radius: 20px;
 }
+/*----------------*/
 .main{
   width: 100%;
-  height: calc(20px + (106.656px + 24.5px + 16px) *5);/*最後の掛け算はグリッドの段数*/
-  b@order-right: 4px solid;/*ボーダー*/
-  b@order-left: 4px solid;/*ボーダー*/
+  height: calc(20px + (106.656px + 24.5px + 16px) *7);
+  /*                                               ↑通常時の縦のグリッドの段数*/
   border-color: #777;/*ボーダーの色(グレー)*/
 }
-@media(max-width:1180px){/*以下_グリッドの収縮開始*/
+@media(max-width:1188px){/*1180px以下になると、グリッドの収縮開始(横一列で5つになる)*/
   .main{
-    h@eight: calc(20px + (106.656px + 24.5px + 16px) *9);/*最後の掛け算はグリッドの段数*/
-    height: calc(((((100vw - 660px) / 5 - 12px) / 92 * 106.656) + 40.5px) * 5 + 20px);
+    height: calc(((((100vw - 660px) / 5 - 12px) / 92 * 106.656) + 40.5px) * 7 + 20px);
+    /*                                ↑横のグリッドの数                     ↑縦のグリッドの段数*/
   }
 }
-@media(max-width:1084px){/*以下*/
+@media(max-width:1084px){/*1076px以下になると、グリッドが横1列で4つになる*/
   .main{
-    height: calc(20px + (106.656px  + 24.5px + 16px) *7);/*最後の掛け算はグリッドの段数*/
+    height: calc(((((100vw - 660px) / 4 - 12px) / 92 * 106.656) + 40.5px) * 9 + 20px);
+    /*                                ↑横のグリッドの数                     ↑縦のグリッドの段数*/
   }
 }
+@media(max-width:980px){/*972px以下になると、グリッドが横1列で4つになる*/
+  .main{
+    height: calc(((((100vw - 660px) / 3 - 12px) / 92 * 106.656) + 40.5px) * 12 + 20px);
+    /*                                ↑横のグリッドの数                     ↑縦のグリッドの段数*/
+  }
+}
+/*----------------*/
 /*メインの区切り*/
 .main_parent_line_1{
   width: 100%;
-  height: 6px;
+  height: 8px;
   background: #5B6495;
   margin-top: 20px;
 }
 .main_parent_line_2{
   width: 100%;
-  height: 6px;
+  height: 8px;
   background: #5B6495;
   margin-bottom: 20px;
 }
 
 /*メイン - 左側の要素(情報)*/
 .hero_info{
-  background: #5ea7c7;
+  b@ackground: #cbced5;
+  background: #dee1e8;
   width: 600px;
   height: 100%;
   float: left;
 }
+.hero_info_stickey{
+  height: calc(100vh - 70px);
+  width: calc(100% - 20px);
+  margin: 10px;
+  b@ackground: #88c0d2;
+  position: sticky;
+  top: 60px;
+    b@order-radius: 18px;
+    b@ox-shadow: 0px 2px 1px 1px #333741;
+}
+.hero_opinion{
+  height: 100px;
+  width: 100%;
+  background: #eeeeee;
+  margin-bottom: 5px;
+  position: absolute;
+  top: 0;
+    border-radius: 18px;
+    box-shadow: 0px 2px 0px 1px #333741;
+}
+.hero_profile{
+  height: calc(100% - 110px);
+  width: 100%;
+  background: #eeeeee;
+  margin-top: 5px;
+  position: absolute;
+  bottom: 0;
+    border-radius: 18px;
+    box-shadow: 0px 2px 0px 1px #333741;
+}
 /*メイン - 右側の要素(グリッド)*/
 .hero_icon_grid{
-  b@ackground: #ccc;
-  background: #cbced5;
+  b@ackground: #cbced5;
+  background: #dee1e8;
   width: calc(100% - 600px);
   height: 100%;
   float: right;
@@ -93,24 +138,25 @@ img{
   display: grid;
   grid-template-columns: repeat(5,1fr)
 }
-@media(max-width:1180px){/*以下(1180px目を含む)*/
-  .vivid_hero_icon_grid{
-    b@ackground: red;
-  }
-}
-@media(max-width:1186px){/*以下(1186px目から適用)*/
+/*----------------*/
+@media(max-width:1188px){/*以下(1180px目から適用)*/
   .vivid_hero_icon_grid{
     grid-template-columns: repeat(5,1fr);
   }
 }
-@media(max-width:1084px){/*以下(1084px目から適用)*/
+@media(max-width:1084px){/*以下(1076px目から適用)*/
   .vivid_hero_icon_grid{
     grid-template-columns: repeat(4,1fr);
   }
 }
-
+@media(max-width:980px){/*以下(972px目から適用)*/
+  .vivid_hero_icon_grid{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+/*----------------*/
 .hero_icon{
-  box-shadow: 0px 2px 1px 0px #333741;/*影*/
+  box-shadow: 0px 2px 0px 0px #333741;/*影*/
   border-radius: 9.5px;
   margin: 8px 6px 8px 6px;
   background-color: #50586C;
@@ -126,14 +172,15 @@ img{
 .hero_icon p{
   font-weight: 300;
   text-align: center;
-  padding: 2px 0px 3px 0px;
+  p@adding: 2px 0px 3px 0px;
+  padding: 2.8px 0 0 0;
   font-size: 12.5px;
   margin: 0px;
   color: #fff;
 }
 .hero_icon:hover{
   background: #5e6a89;
-  box-shadow: 0px 2px 1px 1px #333741;*影*/
+  box-shadow: 0px 2px 0px 1px #333741;/*影*/
 }
 
 /*フッター*/
